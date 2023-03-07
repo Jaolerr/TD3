@@ -20,6 +20,14 @@ public class Paiement {
 	protected LocalDate date;
 	
 	
+	
+	public Paiement(double montant, LocalDate date) {
+		super();
+		this.montant = montant;
+		this.date = date;
+	}
+
+
 	public Paiement() {
 		super();
 	}

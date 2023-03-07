@@ -15,11 +15,20 @@ import javax.persistence.Table;
 public class Paypal extends Paiement {
 
 	private int numeroCompte;
+	
+	
 
 	public Paypal(int numeroCompte) {
 		super();
 		this.numeroCompte = numeroCompte;
 	}
+	
+
+	public Paypal(double montant, LocalDate date, int numeroCompte) {
+		super(montant, date);
+		this.numeroCompte = numeroCompte;
+	}
+
 
 	public Paypal(int idPaiement, double montant, LocalDate date, int numeroCompte) {
 		super(idPaiement, montant, date);
